@@ -1,21 +1,26 @@
 <!doctype html>
 <html lang="en">
   <head>
-    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
+    <div class="container">
     <header>
       <div class="logo">
         <img
           src="Minimalist Design Student Portfolio (Community)/logo.jpg"
           alt=""
         />
-        <h1>Sarah Chen</h1>
+        <p>Sarah Chen</p>
       </div>
-      <nav>
+      <nav class="navbar">
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
@@ -23,76 +28,115 @@
     </header>
     <main>
       <section class="hero">
-        I'm Sarah Chen, design student and explorer of visual languages. I'm
-        passionate about understanding how different design disciplines
-        intersect and create meaningful connections.
-      </section>
-      <div class="line"></div>
-      <section class="project1">
-        <span>Design</span>
-        <h1>Yoga studio rebrand</h1>
-        <button class="button">Explore</button>
-        <img
-          src="Minimalist Design Student Portfolio (Community)/pr1.jpg"
-          alt=""
-        />
-      </section>
-      <div class="line"></div>
-      <section class="project2">
-        <span>Artwork</span>
-        <h1>Abstract paintings</h1>
-        <button class="button">Explore</button>
-        <img
-          src="Minimalist Design Student Portfolio (Community)/pr2.jpg"
-          alt=""
-        />
-      </section>
-      <div class="line"></div>
-      <section class="project3">
-        <span>Design</span>
-        <h1>Magazine study</h1>
-        <button class="button">Explore</button>
-        <img
-          src="Minimalist Design Student Portfolio (Community)/pr3.jpg"
-          alt=""
-        />
-      </section>
-      <div class="line"></div>
-      <section class="project4">
-        <span>Photography</span>
-        <h1>Echoes of Italy</h1>
-        <button class="button">Explore</button>
-        <img
-          src="Minimalist Design Student Portfolio (Community)/pr4.jpg"
-          alt=""
-        />
-      </section>
-      <div class="line"></div>
-      <section class="project5">
-        <span>Design</span>
-        <h1>Castro Capital branding</h1>
-        <button class="button">Explore</button>
-        <img
-          src="Minimalist Design Student Portfolio (Community)/pr5.jpg"
-          alt=""
-        />
-      </section>
-      <div class="line"></div>
-      <section class="extratext">
         <h1>
-          I'm dedicated to crafting meaningful
-          visual experiences through a 
-          multidisciplinary design approach.
+          I'm Sarah Chen, design student and explorer of visual languages. I'm
+          passionate about understanding how different design disciplines
+          intersect and create meaningful connections.
         </h1>
-        <button class="button">Discover my skills and passions</button>
       </section>
       <div class="line"></div>
-      <footer>
+      <section class="projects">
+        <article class="project">
+          <div class="project-content">
+            <span class="design">Design</span>
+            <h2>Yoga Studio Rebrand</h2>
+            <button>Explore</button>
+          </div>
+          <div class="project-image">
+            <img
+              src="Minimalist Design Student Portfolio (Community)/pr1.jpg"
+              alt="PROJECT1"
+            />
+          </div>
+        </article>
+
+        <div class="line"></div>
+
+        <article class="project">
+          <div class="project-content">
+            <span class="artwork">Artwork</span>
+            <h2>Abstract paintings</h2>
+            <button>Explore</button>
+          </div>
+          <div class="project-image">
+            <img
+              src="Minimalist Design Student Portfolio (Community)/pr2.jpg"
+              alt="PROJECT2"
+            />
+          </div>
+        </article>
+        
+        <div class="line"></div>
+
+        <article class="project">
+          <div class="project-content">
+            <span class="editorial">Design</span>
+            <h2>Magazine study</h2>
+            <button>Explore</button>
+          </div>
+          <div class="project-image">
+            <img
+              src="Minimalist Design Student Portfolio (Community)/pr3.jpg"
+              alt="PROJECT3"
+            />
+          </div>
+        </article>
+
+        <div class="line"></div>
+
+        <article class="project">
+          <div class="project-content">
+            <span class="photography">Photography</span>
+            <h2>Echoes of Italy</h2>
+            <button>Explore</button>
+          </div>
+          <div class="project-image">
+            <img
+              src="Minimalist Design Student Portfolio (Community)/pr4.jpg"
+              alt="PROJECT4"
+            />
+          </div>
+        </article>
+
+        <div class="line"></div>
+
+        <article class="project">
+          <div class="project-content">
+            <span class="branding">Design</span>
+            <h2>Castro Capital Branding</h2>
+            <button>Explore</button>
+          </div>
+
+          <div class="project-image">
+            <img
+              src="Minimalist Design Student Portfolio (Community)/pr5.jpg"
+              alt="PROJECT5"
+            />
+          </div>
+        </article>
+
+        <div class="line"></div>
+
+      </section>
+      <section class="about">
+        <h2>
+          I'm dedicated to crafting meaningful visual experiences through a
+          multidisciplinary design approach.
+        </h2>
+        <button>Discover my skills and passions</button>
+      </section>
+    </main>
+
+    <div class="line"></div>
+    
+    <footer class="footer">
+      <div class="footer-links">
         <a href="mailto:tarunbirla765@gmail.com">Email</a>
         <a href="#">Behace</a>
         <a href="#">LinkedIn</a>
-        <p>© Sarah Chen 2025 All Rights Reserved</p>
-      </footer>
-    </main>
+      </div>
+      <p>© Sarah Chen 2025 All Rights Reserved</p>
+    </footer>
+    </div>
   </body>
 </html>

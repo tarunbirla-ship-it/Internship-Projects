@@ -1,21 +1,122 @@
-body{
+*{
+    margin:0;
     padding:0;
-    margin: 0;
     box-sizing: border-box;
+}
+body{
+    font-family: "Source Serif 4", serif;
+    background:#f8f7f4;
+    color:#222;
+}
+.container{
+    max-width: 1400px;                           /*this will make content centered and nothing will touches edges*/
+    margin: auto;
+    padding:20px 40px;
 }
 header{
     display: flex;
-    justify-content: space-around ;
+    justify-content: space-around;        /*it will keep logo left and navigation right*/
     align-items: center;
+    padding:20px 0;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap:12px;
+}
+.logo img{
+     width:40px;
+     height:40px;
+     border-radius: 50%;
+     object-fit: cover;
+}
+.logo p{
+    font-size:18px;
+
+}
+.navbar{
+    display: flex;
+    gap:24px;
+}
+.navbar a{
+    text-decoration: none;
+    color:#444;
 }
 .hero{
-    display: grid;
-    justify-content: space-around;
-    align-items: center;
+    padding:100px 0;
+}
+.hero h1{
+    font-family:Source Serif;
+    font-size:4rem;
+    font-weight:400;
+    line-height:1;
 }
 .line{
-    
-    padding:0px;
-    border: 1px solid;
+    width:100%;
+    height: 1px;
+    background:#d9d9d9;
 }
+.project{
+    display: grid;
+    grid-template-columns:1fr 1fr;       /*text left and image right*/
+    align-items: center;
+    padding:80px 0;
+}
+.project-content span{
+    display: block;
+    margin-bottom:15px;
+}
+.project-content h2{                            /*large project title*/
+    font-size:4rem;
+    font-weight:400;          
+    margin-bottom:25px;
+}
+.project-image img{
+    width:100%;                                                  /*images align right*/
+    max-width: 550px;
+    display: block;
+    margin-left:auto;
+}
+.design{
+    color:#4563ff;
+}
+.artwork{
+    color:#ff4fb7;
+}
+.editorial{
+    color: #a3a050;;
+}
+.photography{
+    color:#a04fff;
+}
+.branding{
+    color:#4563ff;
+}
+.project-content{
+    color:inherit;
+}
+.about{
+    padding:120px 0;
+}
+.about h2{
+    font: size 4rem;
+    font-weight:400;
+    max-width:900px;
+    margin-bottom:40px;
 
+}
+.footer{
+    padding:80px 0;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:80px;
+}
+.footer-links{
+    text-decoration: none;
+    font-size:3rem;
+}
+.footer p{
+    text-align:center;
+}
