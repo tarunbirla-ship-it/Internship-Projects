@@ -1,122 +1,168 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0px 0px 0px 0px;
+  box-sizing: border-box;
 }
-body{
-    font-family: "Source Serif 4", serif;
-    background:#f8f7f4;
-    color:#222;
+body {
+  font-family: "Source Serif 4", serif;
+  background: hsl(0, 0%, 100%);
+  color: #222;
+  line-height: 1.6;
 }
-.container{
-    max-width: 1400px;                           /*this will make content centered and nothing will touches edges*/
-    margin: auto;
-    padding:20px 40px;
+.container {
+  max-width: 1400px; /*this will make content centered and nothing will touches edges*/
+  margin: auto;
+  padding: 0 22px;
 }
-header{
-    display: flex;
-    justify-content: space-around;        /*it will keep logo left and navigation right*/
-    align-items: center;
-    padding:20px 0;
+header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:32px 0;
 }
-.logo{
-    display: flex;
-    align-items: center;
-    gap:12px;
-}
-.logo img{
-     width:40px;
-     height:40px;
-     border-radius: 50%;
-     object-fit: cover;
-}
-.logo p{
-    font-size:18px;
 
+.logo {
+  display: flex;
+  align-items: left;
+  gap: 8px;
 }
-.navbar{
-    display: flex;
-    gap:24px;
-}
-.navbar a{
-    text-decoration: none;
-    color:#444;
-}
-.hero{
-    padding:100px 0;
-}
-.hero h1{
-    font-family:Source Serif;
-    font-size:4rem;
-    font-weight:400;
-    line-height:1;
-}
-.line{
-    width:100%;
-    height: 1px;
-    background:#d9d9d9;
-}
-.project{
-    display: grid;
-    grid-template-columns:1fr 1fr;       /*text left and image right*/
-    align-items: center;
-    padding:80px 0;
-}
-.project-content span{
-    display: block;
-    margin-bottom:15px;
-}
-.project-content h2{                            /*large project title*/
-    font-size:4rem;
-    font-weight:400;          
-    margin-bottom:25px;
-}
-.project-image img{
-    width:100%;                                                  /*images align right*/
-    max-width: 550px;
-    display: block;
-    margin-left:auto;
-}
-.design{
-    color:#4563ff;
-}
-.artwork{
-    color:#ff4fb7;
-}
-.editorial{
-    color: #a3a050;;
-}
-.photography{
-    color:#a04fff;
-}
-.branding{
-    color:#4563ff;
-}
-.project-content{
-    color:inherit;
-}
-.about{
-    padding:120px 0;
-}
-.about h2{
-    font: size 4rem;
-    font-weight:400;
-    max-width:900px;
-    margin-bottom:40px;
 
+.logo img {
+  width: 61px;
+  height: 61px;
+  border-radius: 50%;
 }
-.footer{
-    padding:80px 0;
+
+.logo p {
+  font-size: 23px;
+  font-weight: 400;
+  color: #333;
 }
-.footer-links{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom:80px;
+
+.navbar {
+  display:flex;
+  gap:32px;
+  align-items: left;
 }
-.footer-links{
-    text-decoration: none;
-    font-size:3rem;
+
+.navbar a {
+  text-decoration: none;
+  color: #666;
+  font-size: 18px;
+  transition: 0.3s;
 }
-.footer p{
-    text-align:center;
+
+.navbar a:hover {
+  color: #000;
+}
+.hero {
+  padding: 100px 0;
+}
+.hero h1 {
+  max-width: 900px;
+  font-family: Source Serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 60px;
+}
+.line1 {
+  width: 120%;
+  height: 1px;
+  background: #0034ad;
+}
+.line2 {
+  width: 120%;
+  height: 1px;
+  background: #ab0782;
+}
+.line3 {
+  width: 120%;
+  height: 1px;
+  background: #6e660a;
+}
+.line4 {
+  width: 120%;
+  height: 1px;
+  background: #5f00fd;
+}
+.line5 {
+  width: 120%;
+  height: 1px;
+  background: #6e660a;
+}
+.line6 {
+  width: 120%;
+  height: 1px;
+  background: #4f4f4f;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /*text left and image right*/
+  align-items: center;
+  padding: 80px 0;
+}
+.project-content span {
+  display: block;
+  margin-bottom: 15px;
+}
+.project-content h2 {
+  /*large project title*/
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+.project-image img {
+  width: 100%; /*images align right*/
+  max-width: 550px;
+  display: block;
+  margin-left: auto;
+}
+.design {
+  text-decoration: underline;
+  color: #4563ff;
+}
+.artwork {
+  text-decoration: underline;
+  color: #ff4fb7;
+}
+.editorial {
+  text-decoration: underline;
+  color: #a3a050;
+}
+.photography {
+  text-decoration: underline;
+  color: #a04fff;
+}
+.branding {
+  text-decoration: underline;
+  color: #4563ff;
+}
+.project-content {
+  color: inherit;
+}
+.about {
+  padding: 120px 0;
+}
+.about h2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  max-width: 900px;
+  margin-bottom: 40px;
+}
+.footer {
+  padding: 80px 0;
+}
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.footer-links a{
+  text-decoration: none;
+  font-size: 3rem;
+}
+.footer p {
+  font-size: 3.5rem;
+  text-align: left;
 }
