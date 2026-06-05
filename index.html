@@ -43,7 +43,7 @@
             <div class="project-content">
               <span class="design">Design</span>
               <h2 style="color: #0034ad" ;>Yoga Studio Rebrand</h2>
-              <button style="color: #0034ad" ;>Explore</button>
+              <button style="color: #0034ad" ;><a href="explorepage.html">Explore</a></button>
             </div>
             <div class="project-image">
               <img
@@ -59,7 +59,7 @@
             <div class="project-content">
               <span class="artwork">Artwork</span>
               <h2 style="color: #ab0782" ;>Abstract paintings</h2>
-              <button style="color: #ab0782" ;>Explore</button>
+              <button style="color: #ab0782" ;><a href="explorepage.html">Explore</a></button>
             </div>
             <div class="project-image">
               <img
@@ -74,8 +74,8 @@
           <article class="project">
             <div class="project-content">
               <span class="editorial">Design</span>
-              <h2 style="color: #6e660a" ;>Magazine study</h2>
-              <button style="color: #6e660a" ;>Explore</button>
+              <h2 style="color: #6e660a;" >Magazine study</h2>
+              <button style="color: #6e660a;"> <a href="explorepage.html">Explore</a></button>
             </div>
             <div class="project-image">
               <img
@@ -90,8 +90,8 @@
           <article class="project">
             <div class="project-content">
               <span class="photography">Photography</span>
-              <h2 style="color: #5f00ad" ;>Echoes of Italy</h2>
-              <button style="color: #5f00ad" ;>Explore</button>
+              <h2 style="color: #5f00ad;" >Echoes of Italy</h2>
+              <button style="color: #5f00ad;" ><a href="explorepage.html">Explore</a></fbutton>
             </div>
             <div class="project-image">
               <img
@@ -107,7 +107,7 @@
             <div class="project-content">
               <span class="branding">Design</span>
               <h2 style="color: #0034ad">Castro Capital Branding</h2>
-              <button>Explore</button>
+              <button style="color: #0034ad"> <a href="explorepage.html">Explore</a></button>
             </div>
 
             <div class="project-image">
@@ -123,7 +123,7 @@
             I'm dedicated to crafting meaningful visual experiences through a
             multidisciplinary design approach.
           </h2>
-          <button>Discover my skills and passions</button>
+          <button><a href="skillsandfashions.html">Discover my skills and passions</a></button>
         </section>
       </main>
 
@@ -131,14 +131,47 @@
 
       <footer class="footer">
         <div class="footer-links">
-          <a style="color: #ab0782" href="mailto:tarunbirla765@gmail.com"
+          <a style="color: #ab0782" target="_blank" href="mailto:tarunbirla765@gmail.com"
             >Email</a
           >
-          <a style="color: #5f00ad" href="#">Behance</a>
-          <a style="color: #0034ad" ; href="#">LinkedIn</a>
+          <a style="color: #5f00ad" target="_blank" href="https://www.behance.net/tarunbirla09">Behance</a>
+          <a style="color: #0034ad" target="_blank" ; href="">LinkedIn</a>
         </div>
         <p>© Sarah Chen 2025 All Rights Reserved</p>
       </footer>
     </div>
+    <script>
+
+window.addEventListener("scroll", function () {
+  let img = document.querySelector(".logo img");
+  img.style.transform = "rotate(" + window.scrollY * 0.1 + "deg)";
+});
+const img = document.querySelector(".logo img");
+
+let angle = 0;
+
+img.addEventListener("click", () => {
+  angle += 30; // small rotation step (change this value if needed)
+  img.style.transition = "transform 0.3s ease";
+  img.style.transform = `rotate(${angle}deg)`;
+});
+const projects = document.querySelectorAll(".project");
+
+function revealOnScroll() {
+  projects.forEach((item) => {
+    const windowHeight = window.innerHeight;
+    const elementTop = item.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      item.style.opacity = "1";
+      item.style.transform = "translateY(0)";
+    }
+  });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+revealOnScroll(); // run once on load
+
+</script>
   </body>
 </html>

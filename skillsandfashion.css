@@ -1,0 +1,22 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1500px;
+    font-family: Source Serif;
+
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo img{
+    width: 60px;
+    height:60px;
+}
+.logo p{
+    
+}
